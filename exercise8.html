@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 8</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function find_FirstNotRepeatedChar(str) {
+  var arra1 = str.split('');
+  var result = '';
+  var ctr = 0;
+ 
+  for (var x = 0; x < arra1.length; x++) {
+    ctr = 0;
+ 
+    for (var y = 0; y < arra1.length; y++) 
+    {
+      if (arra1[x] === arra1[y]) {
+        ctr+= 1;
+      }
+    }
+ 
+    if (ctr < 2) {
+      result = result+arra1[x];
+      break;
+    }
+  }
+  return result;
+}
+document.getElementById("demo").innerHTML = find_FirstNotRepeatedChar (prompt("enter any letter or word"));
+
+
+	</script>
+
+</body>
+</html>
