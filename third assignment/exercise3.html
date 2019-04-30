@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset=utf-8 /> 
+<title>Collect the value of href attributes of a link</title> 
+</head> 
+<body> 
+<p><a id="w3" href="https://in.yahoo.com/">Yahoo</a></p> 
+<button onclick="getAttributes()">Click here to get the attribute's value</button>
+<script type=text/javascript>
+function getAttributes()
+{
+ var u = document.getElementById("w3").href;
+ alert('The value of the href attribute of the link is : '+u); 
+}
+</script> 
+</body> 
+</html>

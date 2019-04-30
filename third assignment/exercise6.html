@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>ADD BOX DYNAMICALLY</title>
+<head>
+<script>
+function generate()
+{
+  var tot = document.getElementById("totmob").value;
+var tbl = document.getElementById("sim");
+
+for(var i =1;i<=tot;i++)
+{
+  tbl.innerHTML  = tbl.innerHTML  +'Mobile No'+i+' <input type="text"  size = "20" maxlength= "20" name= hoardingregister.mobileno> <br>';
+}
+
+}
+</script>
+<body>
+<table>
+<tr>
+    <td>
+        <span>Total Mobile Number  </span>
+        <input type="text" id="totmob" />
+    <td>
+    <td>
+    <input type="button"  value="ADD" onclick="generate()"/>
+    </td>
+</tr>
+</table>
+<div id="sim">
+</div>
+</body>
+</html>
